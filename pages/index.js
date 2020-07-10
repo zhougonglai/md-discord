@@ -1,9 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
+import Layout from '@/components/Layout';
 
 export default function Home() {
 	return (
-		<div className='container'>
+		<Layout>
 			<Head>
 				<title>Create Next App</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -12,6 +13,9 @@ export default function Home() {
 					rel='stylesheet'></link>
 			</Head>
 			<header>test</header>
-		</div>
+			<main className='container'>
+				<input placeholder='****' type='password' />
+			</main>
+		</Layout>
 	);
 }
